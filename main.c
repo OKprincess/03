@@ -1,6 +1,6 @@
 //
 //  main.c
-//  03.1
+//  03.2
 //
 //  Created by ok sojoung on 2023/09/21.
 //
@@ -8,17 +8,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-    int   input_int;
-    float input_float;
+int main(void)
+{
+    char c;
+    int  i;
     
-    printf("enter an integer : ");
-    scanf("%d", &input_int);
+    printf("input a number:"); //한자리 숫자
+    scanf("%c", &c);
     
-    printf("enter a float : ");
-    scanf("%f", &input_float);
-    
-    printf("integer : %d, float : %f\n", input_int, input_float);
+    i = c-'0';
+    printf("The input number is %i\n", i);
     
     return 0;
 }
